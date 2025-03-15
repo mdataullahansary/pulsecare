@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Emergency Contacts - PulseCare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+            <div class="flex">
+              <div class="flex-shrink-0 flex items-center">
+                <img
+                  class="h-10 w-auto"
+                  src="Images/Pulse Care.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                <a
+                  href="#"
+                  id="home"
+                  class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  >Home</a
+                >
+                <a
+                  href="#"
+                  id="bookNowButton"
+                  class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  >Book Now</a
+                >
+                <a
+                  href="#"
+                  id="tracking"
+                  class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  >Live Tracking</a
+                >
+                <a
+                  href="#"
+                  id="contacts"
+                  class="border-custom text-gray-900 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  >Emergency Contacts</a
+                >
+              </div>
+            </div>
+            <div class="flex items-center">
+              <button
+                class="!rounded-button bg-custom px-4 py-2 text-white font-medium hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom"
+              >
+                <i class="fas fa-phone-alt mr-2"></i>Emergency Call
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">            <div class="lg:col-span-2">
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <h1 class="text-2xl font-bold text-gray-900 mb-2">Emergency Contacts</h1>
+                    <p class="text-gray-600 mb-6">Keep your emergency contacts updated for quick access during critical situations.</p>                    
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Contact Name</label>                                <input type="text" class="mt-1 block w-full border-gray-300 focus:border-custom focus:ring focus:ring-custom focus:ring-opacity-50" placeholder="Enter full name">                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Relationship</label>
+                                <input type="text" class="mt-1 block w-full border-gray-300 focus:border-custom focus:ring focus:ring-custom focus:ring-opacity-50" placeholder="e.g. Family, Friend">                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+                                <input type="tel" class="mt-1 block w-full border-gray-300 focus:border-custom focus:ring focus:ring-custom focus:ring-opacity-50" placeholder="Enter phone number">                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Email Address</label>
+                                <input type="email" class="mt-1 block w-full border-gray-300 focus:border-custom focus:ring focus:ring-custom focus:ring-opacity-50" placeholder="Enter email address">                            </div>
+                        </div>
+                        <button type="submit" class="!rounded-button w-full bg-custom text-white py-2 px-4 font-semibold hover:bg-red-600 transition-colors">                            <i class="fas fa-plus mr-2"></i>Add Contact
+                        </button>
+                    </form>                </div>
+
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-6">Saved Contacts</h2>
+                    <div class="space-y-4">
+                        <div class="border rounded-lg p-4 flex justify-between items-center">                            <div>
+                                <h3 class="font-medium text-gray-900">John Smith</h3>
+                                <p class="text-sm text-gray-600">Family</p>
+                                <p class="text-sm text-gray-600">+919725417584</p>
+                            </div>                            <div class="flex space-x-3">
+                                <button class="!rounded-button p-2 text-custom hover:bg-red-50">                                    <i class="fas fa-phone"></i>
+                                </button>
+                                <button class="!rounded-button p-2 text-gray-600 hover:bg-gray-50">                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="!rounded-button p-2 text-gray-600 hover:bg-gray-50">                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>                        </div>
+                        <div class="border rounded-lg p-4 flex justify-between items-center">
+                            <div>                                <h3 class="font-medium text-gray-900">Sarah Johnson</h3>
+                                <p class="text-sm text-gray-600">Friend</p>
+                                <p class="text-sm text-gray-600">+918574857452</p>
+                            </div>                            <div class="flex space-x-3">
+                                <button class="!rounded-button p-2 text-custom hover:bg-red-50">                                    <i class="fas fa-phone"></i>
+                                </button>
+                                <button class="!rounded-button p-2 text-gray-600 hover:bg-gray-50">                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="!rounded-button p-2 text-gray-600 hover:bg-gray-50">                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Quick Actions</h2>
+                    <div class="space-y-4">
+                        <button class="!rounded-button w-full bg-custom text-white py-3 px-4 font-semibold hover:bg-red-600 transition-colors">                            <i class="fas fa-ambulance mr-2"></i>Call Emergency (911)
+                        </button>
+                        <button class="!rounded-button w-full bg-white border-2 border-custom text-custom py-3 px-4 font-semibold hover:bg-red-50 transition-colors">                            <i class="fas fa-comments mr-2"></i>Chat with Support
+                        </button>
+                    </div>                </div>
+
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Emergency Information</h2>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-custom px-4 py-3 bg-red-50">                            <h3 class="font-medium text-gray-900">Nearest Hospital</h3>
+                            <p class="text-sm text-gray-600">City General Hospital (0.8 miles)</p>
+                            <p class="text-sm text-gray-600">123 Medical Center Dr.</p>
+                        </div>                        <div>
+                            <h3 class="font-medium text-gray-900 mb-2">Quick Instructions</h3>
+                            <ul class="text-sm text-gray-600 space-y-2">                                <li><i class="fas fa-check text-custom mr-2"></i>Stay calm and assess the situation</li>
+                                <li><i class="fas fa-check text-custom mr-2"></i>Call emergency services if needed</li>
+                                <li><i class="fas fa-check text-custom mr-2"></i>Keep emergency contacts updated</li>
+                            </ul>
+                        </div>
+                    </div>                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Emergency Services</h3>
+                    <ul class="space-y-2">
+                        <li>Ambulance: 911</li>
+                        <li>Fire Department: 911</li>
+                        <li>Police: 911</li>
+                    </ul>
+                </div>
+                <div>                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li>Find Hospitals</li>
+                        <li>Medical Services</li>
+                        <li>Contact Support</li>
+                    </ul>                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">24/7 Support</h3>
+                    <p>Our team is available round the clock to assist you with any emergency situations.</p>
+                </div>
+            </div>
+        </div>    </footer>
+        <script src="script.js"></script>
+</body>
+</html>
