@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Medical Services</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script
+      src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js"
+      data-color="#000000"
+      data-border-radius="small"
+    ></script>
+  </head>
+  <body class="bg-gray-50 font-['Inter']">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex">
+            <div class="flex-shrink-0 flex items-center">
+              <img
+                class="h-10 w-auto"
+                src="Images/Pulse Care.png"
+                alt="Logo"
+              />
+            </div>
+            <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+              <a
+                href="#"
+                id="home"
+                class="border-custom text-gray-900 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="#"
+                id="bookNowButton"
+                class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >Book Now</a
+              >
+              <a
+                href="#"
+                class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >Live Tracking</a
+              >
+              <a
+                href="#"
+                class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >Emergency Contacts</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center">
+            <button
+              class="!rounded-button bg-custom px-4 py-2 text-white font-medium hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom"
+            >
+              <i class="fas fa-phone-alt mr-2"></i>Emergency Call
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl font-bold text-gray-900 mb-4">
+            Emergency Medical Services
+          </h1>
+          <p class="text-lg text-gray-600 mb-8">
+            Fast and reliable ambulance service when you need it most
+          </p>
+          <div class="flex gap-4 justify-center mb-8">
+            <div class="flex-1 max-w-md">
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full !rounded-button border-gray-300 pl-10 pr-4 py-3 text-gray-900 placeholder-gray-500"
+                  placeholder="Enter your location"
+                />
+                <div
+                  class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                >
+                  <i class="fas fa-map-marker-alt text-gray-400"></i>
+                </div>
+              </div>
+            </div>
+            <button
+              class="!rounded-button bg-custom px-8 py-3 text-white font-medium hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+        <div class="lg:col-span-2">
+          <div
+            class="bg-white rounded-lg shadow-sm p-6 h-[500px] relative overflow-hidden"
+          >
+            <h2 class="text-xl font-semibold text-gray-900 mb-4">
+              Live Ambulance Tracking
+            </h2>
+            <img
+              src="https://ai-public.creatie.ai/gen_page/map_placeholder_1280x720.png"
+              class="absolute inset-0 w-full h-full object-cover"
+              alt="Map"
+            />
+          </div>
+        </div>
+        <div class="space-y-8">
+          <div class="bg-white rounded-lg shadow-sm p-6">
+            <h2 class="text-xl font-semibold text-gray-900 mb-4">
+              Quick Actions
+            </h2>
+            <div class="space-y-4">
+              <button
+                class="!rounded-button w-full bg-custom px-4 py-3 text-white font-medium hover:bg-red-700"
+              >
+                <i class="fas fa-ambulance mr-2"></i>Request Emergency
+              </button>
+              <button
+                class="!rounded-button w-full bg-yellow-500 px-4 py-3 text-white font-medium hover:bg-yellow-600"
+              >
+                <i class="fas fa-exclamation-triangle mr-2"></i>SOS Signal
+              </button>
+              <button
+                class="!rounded-button w-full bg-blue-500 px-4 py-3 text-white font-medium hover:bg-blue-600"
+              >
+                <i class="fas fa-phone-alt mr-2"></i>Emergency Contacts
+              </button>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-sm p-6">
+            <h2 class="text-xl font-semibold text-gray-900 mb-4">
+              Status Updates
+            </h2>
+            <div class="space-y-4">
+              <div class="flex items-center text-green-500">
+                <i class="fas fa-check-circle mr-2"></i>
+                <span>3 Ambulances Available Nearby</span>
+              </div>
+              <div class="flex items-center text-blue-500">
+                <i class="fas fa-clock mr-2"></i>
+                <span>Average Response Time: 8 mins</span>
+              </div>
+              <div class="flex items-center text-yellow-500">
+                <i class="fas fa-hospital mr-2"></i>
+                <span>5 Emergency Rooms Ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div class="bg-white rounded-lg shadow-sm p-6">
+          <div class="text-4xl font-bold text-custom mb-2">24/7</div>
+          <h3 class="text-lg font-medium text-gray-900 mb-2">
+            Emergency Service
+          </h3>
+          <p class="text-gray-600">
+            Available round the clock for your emergency needs
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-6">
+          <div class="text-4xl font-bold text-custom mb-2">5min</div>
+          <h3 class="text-lg font-medium text-gray-900 mb-2">Response Time</h3>
+          <p class="text-gray-600">Quick response to emergency situations</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-6">
+          <div class="text-4xl font-bold text-custom mb-2">100+</div>
+          <h3 class="text-lg font-medium text-gray-900 mb-2">Medical Staff</h3>
+          <p class="text-gray-600">Experienced healthcare professionals</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-6">
+          <div class="text-4xl font-bold text-custom mb-2">50+</div>
+          <h3 class="text-lg font-medium text-gray-900 mb-2">Ambulances</h3>
+          <p class="text-gray-600">Modern fleet of emergency vehicles</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">
+              Emergency Guidelines
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >First Aid Tips</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Emergency Procedures</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Safety Measures</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">
+              Hospital Network
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Partner Hospitals</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Medical Centers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Specialists</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Insurance</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Coverage Details</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Claims Process</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Network Providers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Help Center</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Contact Support</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2024 PULSE CARE. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+      <script src="script.js"></script>
+  </body>
+</html>

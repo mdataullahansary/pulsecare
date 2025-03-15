@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>PulseCare - Live Tracking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+</head>
+<body class="bg-gray-50 font-['Inter']">
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">                    <img src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="PulseCare" class="h-8">
+                    <span class="ml-4 text-xl font-semibold text-gray-900">PulseCare</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center">                        <i class="fas fa-phone-alt text-custom mr-2"></i>
+                        <span class="text-gray-700 font-medium">Emergency: 911</span>
+                    </div>
+                    <div class="bg-custom/10 px-4 py-2 rounded-lg">
+                        <span class="text-custom font-medium">On the Way</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16 h-screen">        <div class="flex h-full">
+            <div class="w-[70%] relative">
+                <div class="absolute inset-0">
+                    <img src="https://ai-public.creatie.ai/gen_page/map_placeholder_1280x720.png" alt="Map" class="w-full h-full object-cover">                    <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg">
+                        <div class="flex items-center space-x-2 mb-2">                            <i class="fas fa-clock text-custom"></i>
+                            <span class="font-medium">ETA: 8 mins</span>                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-route text-custom"></i>
+                            <span class="font-medium">Distance: 2.5 km</span>
+                        </div>
+                    </div>                </div>
+            </div>
+
+            <div class="w-[30%] bg-white border-l border-gray-200 overflow-y-auto">
+                <div class="p-6">                    <div class="mb-8">
+                        <h2 class="text-lg font-semibold mb-4">Patient Details</h2>
+                        <div class="space-y-4">                            <div>
+                                <label class="text-sm text-gray-500">Name</label>
+                                <p class="font-medium">John Smith</p>
+                            </div>
+                            <div>
+                                <label class="text-sm text-gray-500">Contact</label>
+                                <p class="font-medium">+1 (555) 123-4567</p>
+                            </div>
+                            <div>                                <label class="text-sm text-gray-500">Pickup Location</label>
+                                <p class="font-medium">123 Main St, New York, NY 10001</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">                        <h2 class="text-lg font-semibold mb-4">Ambulance Details</h2>
+                        <div class="flex items-center space-x-4 mb-4">                            <img src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a male ambulance driver in uniform, looking confident and reliable, against a neutral background&width=80&height=80&orientation=squarish&flag=ba45ac37-827f-4a23-97bb-a838c06d72b6" alt="Driver" class="w-16 h-16 rounded-full object-cover">                            <div>
+                                <p class="font-medium">Michael Johnson</p>
+                                <p class="text-sm text-gray-500">Unit #A-123</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2">                            <button class="flex-1 bg-custom text-white py-2 rounded-lg !rounded-button">
+                                <i class="fas fa-phone-alt mr-2"></i>Call
+                            </button>
+                            <button class="flex-1 border border-custom text-custom py-2 rounded-lg !rounded-button">                                <i class="fas fa-comment mr-2"></i>Message
+                            </button>
+                        </div>                    </div>
+
+                    <div class="mb-8">
+                        <h2 class="text-lg font-semibold mb-4">Status Timeline</h2>
+                        <div class="relative pl-8 space-y-6">
+                            <div class="relative">                                <div class="absolute -left-8 w-4 h-4 bg-custom rounded-full"></div>
+                                <div class="border-l-2 border-custom absolute -left-6 top-4 bottom-0"></div>
+                                <p class="font-medium">Booking Confirmed</p>
+                                <p class="text-sm text-gray-500">10:30 AM</p>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute -left-8 w-4 h-4 bg-custom rounded-full"></div>
+                                <div class="border-l-2 border-custom absolute -left-6 top-4 bottom-0"></div>
+                                <p class="font-medium">Ambulance Dispatched</p>
+                                <p class="text-sm text-gray-500">10:32 AM</p>
+                            </div>                            <div class="relative">
+                                <div class="absolute -left-8 w-4 h-4 bg-custom rounded-full"></div>
+                                <p class="font-medium">On the Way</p>
+                                <p class="text-sm text-gray-500">Current Status</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            </div>
+        </div>
+    </main>
+
+    <div class="fixed bottom-4 right-4 flex flex-col space-y-2">
+        <button class="bg-custom text-white p-4 rounded-full shadow-lg hover:bg-custom/90 transition-colors !rounded-button">            <i class="fas fa-exclamation-triangle text-xl"></i>
+        </button>
+        <button class="bg-white text-custom p-4 rounded-full shadow-lg hover:bg-gray-50 transition-colors border border-custom !rounded-button">            <i class="fas fa-share-alt text-xl"></i>
+        </button>
+    </div>
+</body>
+</html>

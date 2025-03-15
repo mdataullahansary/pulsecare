@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseCare - Emergency Medical Services</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script
+      src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js"
+      data-color="#000000"
+      data-border-radius="small"
+    ></script>
+  </head>
+  <body class="min-h-screen bg-gray-50 font-['Inter']">
+    <header class="bg-white shadow-sm">
+        <nav class="bg-white shadow-sm sticky top-0 z-50">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex justify-between h-16">
+                <div class="flex">
+                  <div class="flex-shrink-0 flex items-center">
+                    <img
+                      class="h-10 w-auto"
+                      src="Images/Pulse Care.png"
+                      alt="Logo"
+                    />
+                  </div>
+                  <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a
+                      href="#"
+                      id="home"
+                      class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                      >Home</a
+                    >
+                    <a
+                      href="#"
+                      id="bookNowButton"
+                      class="border-custom border-b-2  text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                      >Book Now</a
+                    >
+                    <a
+                      href="#"
+                      class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                      >Live Tracking</a
+                    >
+                    <a
+                      href="#"
+                      class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                      >Emergency Contacts</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <button
+                    class="!rounded-button bg-custom px-4 py-2 text-white font-medium hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom"
+                  >
+                    <i class="fas fa-phone-alt mr-2"></i>Emergency Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-8">
+          <div>
+            <h1 class="text-4xl font-bold text-gray-900">
+              Emergency Medical Services
+            </h1>
+            <p class="mt-4 text-lg text-gray-600">
+              Fast and reliable ambulance service when you need it most
+            </p>
+          </div>
+
+          <form class="space-y-6 bg-white p-8 rounded-lg shadow-sm">
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Your Location</label
+              >
+              <div class="mt-1 relative">
+                <input
+                  type="text"
+                  class="w-full border-gray-300 rounded-md pl-10 !rounded-button"
+                  placeholder="Enter your address"
+                />
+                <i
+                  class="fas fa-map-marker-alt absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                ></i>
+              </div>
+              <button
+                type="button"
+                class="mt-2 text-sm text-custom hover:text-custom/80 !rounded-button"
+              >
+                <i class="fas fa-location-crosshairs mr-1"></i>
+                Use current location
+              </button>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Contact Number</label
+              >
+              <div class="mt-1 relative">
+                <input
+                  type="tel"
+                  class="w-full border-gray-300 rounded-md pl-10 !rounded-button"
+                  placeholder="Your phone number"
+                />
+                <i
+                  class="fas fa-phone absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                ></i>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Emergency Type</label
+              >
+              <div class="mt-1 relative">
+                <select
+                  class="w-full border-gray-300 rounded-md pl-10 !rounded-button appearance-none"
+                >
+                  <option value="">Select emergency type</option>
+                  <option value="accident">Accident</option>
+                  <option value="cardiac">Cardiac Emergency</option>
+                  <option value="trauma">Trauma</option>
+                  <option value="other">Other Medical Emergency</option>
+                </select>
+                <i
+                  class="fas fa-ambulance absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                ></i>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Additional Notes</label
+              >
+              <textarea
+                class="mt-1 w-full border-gray-300 rounded-md !rounded-button"
+                rows="3"
+                placeholder="Any specific requirements or conditions..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-custom text-white py-3 font-medium !rounded-button hover:bg-custom/90 transition-colors"
+            >
+              <i class="fas fa-truck-medical mr-2"></i>
+              Book Emergency Service Now
+            </button>
+          </form>
+        </div>
+
+        <div class="relative h-[600px] rounded-lg overflow-hidden shadow-sm">
+          <img
+            src="Images/map.jpeg"
+            alt="Map"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-sm"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="h-2 w-2 rounded-full bg-green-500 animate-pulse"
+              ></div>
+              <div>
+                <p class="text-sm font-medium text-gray-900">
+                  3 Ambulances Nearby
+                </p>
+                <p class="text-sm text-gray-500">
+                  Estimated arrival: 8-10 mins
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <i class="fas fa-clock text-3xl text-custom"></i>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900">24/7 Service</h3>
+          <p class="mt-2 text-gray-600">
+            Round-the-clock emergency medical services available
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <i class="fas fa-user-md text-3xl text-custom"></i>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900">
+            Expert Medical Team
+          </h3>
+          <p class="mt-2 text-gray-600">
+            Highly trained medical professionals ready to assist
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <i class="fas fa-shield-alt text-3xl text-custom"></i>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900">
+            Safe & Reliable
+          </h3>
+          <p class="mt-2 text-gray-600">
+            Licensed and certified emergency medical services
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white mt-16">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Emergency Contacts</h4>
+            <div class="space-y-2">
+              <p>Ambulance: 102</p>
+              <p>Hospital: +9198247972758</p>
+              <p>Support: +911800 125 147</p>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Service Areas</h4>
+            <div class="space-y-2">
+              <p>Berhampore</p>
+              <p>Gora Bazzar</p>
+              <p>Khagra</p>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <div class="space-y-2">
+              <p><a href="#" class="hover:text-custom">About Us</a></p>
+              <p><a href="#" class="hover:text-custom">Services</a></p>
+              <p><a href="#" class="hover:text-custom">Contact</a></p>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Legal</h4>
+            <div class="space-y-2">
+              <p><a href="#" class="hover:text-custom">Terms of Service</a></p>
+              <p><a href="#" class="hover:text-custom">Privacy Policy</a></p>
+              <p><a href="#" class="hover:text-custom">Disclaimer</a></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400"
+        >
+          <p>&copy; 2024 PulseCare. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="fixed bottom-4 right-4 z-50">
+      <button
+        class="bg-custom text-white p-4 rounded-full shadow-lg hover:bg-custom/90 transition-colors !rounded-button"
+      >
+        <i class="fas fa-comments text-xl"></i>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
