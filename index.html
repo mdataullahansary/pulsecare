@@ -26,6 +26,9 @@
     ></script>
   </head>
   <body class="bg-gray-50 font-['Inter']">
+
+    <!-- Nav Bar -->
+
     <nav class="bg-white shadow-sm sticky top-0 z-50">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -35,27 +38,28 @@
             </div>
             <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
               <a
-                id="home"
+                href="index.html"
                 class="border-custom text-gray-900 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                 >Home</a
               >
               <a
-                id="bookNowButton"
+                href="booking.html"
                 class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                 >Book Now</a
               >
               <a
-                id="tracking"
+                href="live_tracking.html"
                 class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                 >Live Tracking</a
               >
               <a
-                id="contacts"
+                href="contacts.html"
                 class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                 >Emergency Contacts</a
               >
             </div>
           </div>
+
           <div class="flex flex-col items-center justify-center h-full w-10">
             <button
               class="hidden w-44 md:flex !rounded-button bg-custom px-4 py-2 text-white font-medium hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom mr-20"
@@ -83,7 +87,7 @@
             
               <div
                 id="mobile-menu"
-                class="hidden absolute  right-1 mt-2  w-[120px] flex bg-gray-50 border-transparent rounded-lg  flex-col items-center space-y-4 md:hidden z-10 transition delay-150 duration-300 ease-in-out"
+                class="hidden absolute h-[100vp] right-1 mt-2  w-[120px] flex bg-gray-50 border-transparent rounded-lg  flex-col items-center space-y-4 md:hidden z-10 transition delay-150 duration-300 ease-in-out"
               >
                 <a href="index.html" class="hover:text-gray-600  text-lg font-medium ">Home</a>
                 <a href="booking.html" class="hover:text-gray-600 text-lg font-medium">Book Now</a>
@@ -96,6 +100,9 @@
     </nav>
 
     <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+      <!-- Booking Section -->
+
       <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
         <div class="max-w-3xl mx-auto text-center">
           <h1 class="text-4xl font-bold text-gray-900 mb-4">
@@ -108,6 +115,7 @@
             <div class="flex-1 max-w-md">
               <div class="relative">
                 <input
+                 id="inputBox"
                   type="text"
                   class="w-full !rounded-button border-gray-300 pl-10 pr-4 py-3 text-gray-900 placeholder-gray-500"
                   placeholder="Enter your location"
@@ -119,7 +127,7 @@
                 </div>
               </div>
             </div>
-            <button
+            <button id="bookNow"
               class="!rounded-button bg-custom px-8 py-3 text-white font-medium hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom"
             >
               Book Now
@@ -127,6 +135,7 @@
           </div>
         </div>
       </div>
+ <!-- Quick Actions -->
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
         <div class="lg:col-span-2">
@@ -136,9 +145,11 @@
             <h2 class="text-xl font-semibold text-gray-900 mb-4">
               Live Ambulance Tracking
             </h2>
-            <div id="map"
-              class="absolute inset-0 w-full h-full object-cover bg-red-700"
-              alt="Map"></div>
+            <img id="map"
+              src="https://ai-public.creatie.ai/gen_page/map_placeholder_1280x720.png"
+              class="absolute inset-0 w-full h-full object-cover"
+              alt="Map"
+            />
           </div>
         </div>
         <div class="space-y-8">
@@ -213,7 +224,7 @@
         </div>
       </div>
     </main>
-
+ <!-- fooer  -->
     <footer class="bg-gray-900">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -307,7 +318,6 @@
         </div>
       </div>
     </footer>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP_EWRE0bjTNThxG39pYDPM3RvOaqbJs8&callback=initMap" async defer ></script>
     <script src="script.js"></script>
   </body>
 </html>
