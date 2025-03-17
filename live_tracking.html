@@ -123,21 +123,29 @@
         </div>
 
         <div class=" w-full sm:w-[30%] bg-white border-l border-gray-200 sm:overflow-y-auto">
-          <div class="p-6">
+          <div id="userdata" class="p-6">
             <div class="mb-8">
               <h2 class="text-lg font-semibold mb-4">Patient Details</h2>
               <div class="space-y-4">
                 <div>
                   <label class="text-sm text-gray-500">Name</label>
-                  <p class="font-medium">Swapon Biswas</p>
+                  <p id="patientName" class="font-medium"></p>
                 </div>
                 <div>
                   <label class="text-sm text-gray-500">Contact</label>
-                  <p class="font-medium">+916258741254</p>
+                  <p id="userNumTrucking" class="font-medium">+916258741254</p>
+                </div>
+                <div>
+                  <label class="text-sm text-gray-500">Emergency Type</label>
+                  <p id="emergencyinfo" class="font-medium">Accident</p>
                 </div>
                 <div>
                   <label class="text-sm text-gray-500">Pickup Location</label>
-                  <p class="font-medium">Old Police line Road Berhampore 710014</p>
+                  <p id="pickupLocation" class="font-medium">Old Police line Road Berhampore 710014</p>
+                </div>
+                <div>
+                  <label class="text-sm text-gray-500">Additional Notes</label>
+                  <p id="patientNotes" class="font-medium"></p>
                 </div>
               </div>
             </div>
@@ -198,6 +206,24 @@
                   ></div>
                   <p class="font-medium">On the Way</p>
                   <p class="text-sm text-gray-500">Current Status</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h2 class="text-lg font-semibold mb-4">Booking Information</h2>
+              <div class="space-y-4">
+                <div>
+                  <label class="text-sm text-gray-500">Booking ID</label>
+                  <p class="font-medium">#pulsecare1234</p>
+                </div>
+                <div>
+                  <label class="text-sm text-gray-500">Timestamp:</label>
+                  <p id="timeStamp" class="font-medium">2025-03-17 17:21:50</p>
+                </div>
+                <div>
+                  <label class="text-sm text-gray-500">Destination Hospital:</label>
+                  <p class="font-medium">Lake Veiw Hospital</p>
                 </div>
               </div>
             </div>
