@@ -54,10 +54,7 @@ bookNow.addEventListener('click', function() {
   if (locationValue !== "") {
   localStorage.setItem('userAddress', locationValue);
   window.location.href = 'booking.html'; 
-  const userAddress = localStorage.getItem('userAddress');
-console.log(userAddress);
-
-  address.value += `${userAddress}, `;
+  
 
   }else {
     alert('Please enter a valid location');
@@ -65,6 +62,10 @@ console.log(userAddress);
 }) };
 
 if (submitBtn) {
+  const userAddress = localStorage.getItem('userAddress');
+console.log(userAddress);
+
+  address.value = userAddress;
 submitBtn.onclick = (event) => {
   event.preventDefault();
   localStorage.setItem('userName', namel.value);
