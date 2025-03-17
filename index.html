@@ -136,11 +136,9 @@
             <h2 class="text-xl font-semibold text-gray-900 mb-4">
               Live Ambulance Tracking
             </h2>
-            <img
-              src="https://ai-public.creatie.ai/gen_page/map_placeholder_1280x720.png"
-              class="absolute inset-0 w-full h-full object-cover"
-              alt="Map"
-            />
+            <div id="map"
+              class="absolute inset-0 w-full h-full object-cover bg-red-700"
+              alt="Map"></div>
           </div>
         </div>
         <div class="space-y-8">
@@ -309,7 +307,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP_EWRE0bjTNThxG39pYDPM3RvOaqbJs8&callback=initMap" async defer ></script>
     <script src="script.js"></script>
   </body>
 </html>
