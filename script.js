@@ -14,3 +14,10 @@ document.getElementById('tracking').addEventListener('click', function() {
 document.getElementById('contacts').addEventListener('click', function() {
             window.location.href = 'contacts.html';
           });
+
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+      
+menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+});          
