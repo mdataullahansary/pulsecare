@@ -25,6 +25,30 @@
       data-color="#000000"
       data-border-radius="small"
     ></script>
+    <style>
+      /* Custom Keyframes for the Shimmer Effect */
+      @keyframes shimmer {
+        0% {
+          background-position: 200% 0;
+        }
+        100% {
+          background-position: -200% 0;
+        }
+      }
+  
+      /* Shimmer Animation Class */
+      .shimmer {
+        background: linear-gradient(
+          to right,
+          #09da83 0%,
+          #09da83 20%,
+          #08d45d  40%,
+          #04eca7  100%
+        );
+        background-size: 200% auto;
+        animation: shimmer 2s linear infinite;
+      }
+    </style>
   </head>
   <body class="bg-gray-50 font-['Inter']">
     <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
@@ -66,8 +90,8 @@
                 </div>
               </div>
               <div class="flex items-center">
-                <div class="bg-custom/10 px-4 py-2 rounded-lg">
-                    <span class="text-custom font-medium">On the Way</span>
+                <div class="bg-green-300 px-4 py-2 rounded-lg shimmer">
+                    <span class="text-custom font-medium ">On the Way</span>
                   </div>
               </div>
             </div>
@@ -76,8 +100,8 @@
 
     <main class="pt-16 h-screen">
       <div class="flex h-full">
-        <div class="w-[70%] relative">
-          <div class="absolute inset-0">
+        <div class="sm:w-[70%] relative">
+          <div class="absolute inset-0 hidden sm:flex">
             <img
               src="https://ai-public.creatie.ai/gen_page/map_placeholder_1280x720.png"
               alt="Map"
@@ -98,7 +122,7 @@
           </div>
         </div>
 
-        <div class="w-[30%] bg-white border-l border-gray-200 overflow-y-auto">
+        <div class=" w-full sm:w-[30%] bg-white border-l border-gray-200 sm:overflow-y-auto">
           <div class="p-6">
             <div class="mb-8">
               <h2 class="text-lg font-semibold mb-4">Patient Details</h2>
@@ -181,6 +205,8 @@
         </div>
       </div>
     </main>
+    
+    
 
     <div class="fixed bottom-4 right-4 flex flex-col space-y-2">
       <button
@@ -194,6 +220,100 @@
         <i class="fas fa-share-alt text-xl"></i>
       </button>
     </div>
+    <!-- footer  -->
+    <footer class="bg-gray-900">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">
+              Emergency Guidelines
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >First Aid Tips</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Emergency Procedures</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Safety Measures</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">
+              Hospital Network
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Partner Hospitals</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Medical Centers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Specialists</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Insurance</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Coverage Details</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Claims Process</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Network Providers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Help Center</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Contact Support</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2024 PULSE CARE. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
