@@ -73,6 +73,7 @@ submitBtn.onclick = (event) => {
   localStorage.setItem('userNumber', number.value);
   localStorage.setItem('emergencyType', emergencyType.value);
   localStorage.setItem('userNotes', addNotes.value);
+  address.value = "";
   window.location.href = 'live_tracking.html';
 }
 };
