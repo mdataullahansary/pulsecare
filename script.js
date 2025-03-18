@@ -20,6 +20,9 @@ const timeStamp = document.getElementById('timeStamp');
 
 
 
+function makeCall() {
+  window.location.href = `tel:${102}`;
+}
 
 
 document.getElementById('home').addEventListener('click', function() {
